@@ -6,6 +6,7 @@ const Header = () => {
         <>
             <Image className={headerStlyes.logo}
                 src='/images/KingsKareLogo.png'
+                alt="KingsKareLogo"
                 height={200}
                 width={200} />
             <h1 className={headerStlyes.title}>

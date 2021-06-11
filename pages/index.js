@@ -13,6 +13,7 @@ export default function Home() {
         </h1>
         <Image className={styles.logo}
           src='/images/hairOil1.jpg'
+          alt='hair oil picture'
           height={300}
           width={300} />
       </main>
