@@ -8,6 +8,6 @@ it('Renders main with image, footer', () => {
     )
     expect(getByRole('img', { name: /hair oil picture/i })).toBeTruthy();
 
-    // contentinfo = footer
+    // footer role = contentinfo
     expect(getByRole('contentinfo')).toBeTruthy();
 })
