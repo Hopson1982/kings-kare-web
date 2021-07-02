@@ -1,6 +1,6 @@
 export const listProducts = [
     {
-        id: '1',
+        _id: '1',
         name: 'Beard Oil',
         excerpt:
             'Handmade beard oil...',
@@ -10,7 +10,7 @@ export const listProducts = [
             5.00,
     },
     {
-        id: '2',
+        _id: '2',
         name: 'Hair Oil',
         excerpt: 'Handmade hair oil...',
         description:
@@ -19,7 +19,7 @@ export const listProducts = [
             7,
     },
     {
-        id: '3',
+        _id: '3',
         name: 'Hair Care Kit',
         excerpt:
             'Kit of hair product...',
@@ -29,7 +29,7 @@ export const listProducts = [
             12,
     },
     {
-        id: '4',
+        _id: '4',
         name: 'Grooming Kit',
         excerpt:
             'Kit of grooming product...',

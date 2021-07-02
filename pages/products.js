@@ -1,4 +1,5 @@
 import ProductList from "../component/ProductList"
+import handler from "./api";
 
 export default function ProductsPage({ listProducts }) {
     return (
@@ -9,10 +10,15 @@ export default function ProductsPage({ listProducts }) {
 }
 
 export const getStaticProps = async () => {
-  // const response = await fetch('http://localhost:3000/api');
-   const response = await fetch('https://kings-kare-web-16i2k3o2r-hopson1982.vercel.app//api');
+    // console.log(handler.get);
+    // handler.get(async (req, res) => {
 
-    
+    //     let cursor = await req.db.collection('products').find()
+    //     const doc = await cursor.toArray();
+    //     // console.log(doc);
+    //     res.json(doc);
+    // });
+    const response = await fetch('http://localhost:3000/api');
 
     const listProducts = await response.json();
 

@@ -1,17 +1,24 @@
+import { listProducts } from '../../data'
+
+export default function handler(req, res) {
+  res.status(200).json(listProducts)
+}
+
 //MongoDB node driver works only on the server side and assumes you're working on the backend.
-import nextConnect from 'next-connect';
-import middleware from '../../middleware/dbConnection';
 
-const handler = nextConnect();
+// import nextConnect from 'next-connect';
+// import middleware from '../../middleware/dbConnection';
 
-handler.use(middleware);
+// const handler = nextConnect();
 
-handler.get(async (req, res) => {
+// handler.use(middleware);
 
-    let cursor = await req.db.collection('products').find()
-    const doc = await cursor.toArray();
-    // console.log(doc);
-    res.json(doc);
-});
+// handler.get(async (req, res) => {
 
-export default handler;
+//     let cursor = await req.db.collection('products').find()
+//     const doc = await cursor.toArray();
+//     // console.log(doc);
+//     res.json(doc);
+// });
+
+// export default handler;
