@@ -1,5 +1,7 @@
 import ProductList from "../component/ProductList"
+import {server} from "../routeConfig"
 import handler from "./api";
+
 
 export default function ProductsPage({ listProducts }) {
     return (
@@ -18,7 +20,7 @@ export const getStaticProps = async () => {
     //     // console.log(doc);
     //     res.json(doc);
     // });
-    const response = await fetch('http://localhost:3000/api');
+    const response = await fetch( server + '/api');
 
     const listProducts = await response.json();
 
